@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOP NOW!</title>
+	<link rel="stylesheet" href="appoinfo3.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="homepage.html">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">CLOTHING
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="clomen.html">MEN</a>
+    <a href="clowomen.html">WOMEN</a>
+    <a href="clojunior.html">JUNIOR</a>
+  </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction1()">SHOES
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown1">
+	<a href="shoem.html">MEN</a>
+	<a href="shoew.html">WOMEN</a>
+	<a href="shoej.html">JUNIOR</a>
+	<a href="shoeo.html">OTHERS</a>
+  </div>
+  </div>
+  <div class="dropdown">
+   <button class="dropbtn" onclick="myFunction2()">ACCESSORIES
+	<i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content" id="myDropdown2">
+	<a href="sportbags.html">SPORTBAGS</a>
+	<a href="caps.html">CAPS</a>
+	<a href="#">HEADBANDS</a>
+	<a href="#">SOCKS</a>
+	<a href="#">FITNESS GADGETS</a>
+	<a href="#">OTHERS</a>
+   </div>
+   </div> 
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown2");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+<body style="background-color:rgb(46, 161, 182);">
+	
+	<div class="text1">
+		
+		<div class="text2">
+			<h1>WE HAVE STARTED DELIVERING!</h1>
+			<h1> DUE TO COVID-19 RESTRICTIONS, DELIVERY TIME MIGHT TAKE LONGER THAN USUAL.</h1>
+		
+			<br />
+			<br />
+		  </div>
+	</div>
+	<marquee behaviour="scroll" direction="left" scrollamount="7">
+	<img src="improd1.webp" width="350" height="250" alt="Natural" />
+	<img src="improd2.jpg" width="350" height="250" alt="Natural" />
+	<img src="improd3.webp" width="350" height="250" alt="Natural" />
+	<img src="improd4.webp" width="350" height="250" alt="Natural" />
+	<img src="improd5.webp" width="350" height="250" alt="Natural" />
+	<img src="improd6.jpg" width="350" height="250" alt="Natural" />
+		</marquee>
+  </div>
+  <div class="divider"></div>
+	
+	<div class="divider"></div>
+</body>
+</html>
